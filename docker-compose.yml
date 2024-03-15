@@ -1,0 +1,8 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python /opt/main.py
+    env_file:
+      - ./.env
